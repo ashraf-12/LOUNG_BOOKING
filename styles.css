@@ -1,0 +1,125 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0d47a1;
+  color: white;
+  padding: 15px 20px;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+/* ===== Instructions Section ===== */
+.instructions {
+  background: #bbdefb;            /* light blue */
+  border: 2px solid #0d47a1;      /* dark blue */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.instructions h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.instructions table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.instructions table, 
+.instructions th, 
+.instructions td {
+  border: 1px solid #0d47a1;
+  padding: 10px;
+  text-align: left;
+}
+
+.instructions th {
+  background-color: #1976d2;
+  color: white;
+}
+
+.instructions tr:nth-child(even) td {
+  background-color: #e3f2fd;
+}
+
+/* Booking Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #0d47a1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Notification messages */
+.notification {
+  display: none;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.notification.success {
+  background-color: #c8e6c9;
+  color: #256029;
+  border: 1px solid #2e7d32;
+}
+
+.notification.error {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+  border: 1px solid #c62828;
+}
